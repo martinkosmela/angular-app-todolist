@@ -1,0 +1,25 @@
+.todo__delete {
+  background: #cc7878;
+  color: #fff;
+  border: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  padding-bottom: 2px;
+  cursor: pointer;
+  float: right;
+  outline: none;
+  &:hover {
+    background: #c54f4f;
+  }
+}
+
+.todo__item {
+  background: #f4f4f4;
+  padding: 10px;
+  border-bottom: 1px dotted #ccc;
+}
+
+.todo__item--is-complete {
+  text-decoration: line-through;
+}
