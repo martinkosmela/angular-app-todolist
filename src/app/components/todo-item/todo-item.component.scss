@@ -15,9 +15,17 @@
 }
 
 .todo__item {
-  background: #f4f4f4;
   padding: 10px;
   border-bottom: 1px dotted #ccc;
+}
+
+input[type='checkbox'] {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+label {
+  cursor: pointer;
 }
 
 .todo__item--is-complete {
