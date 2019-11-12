@@ -1,6 +1,9 @@
 <div class="todos__container">
   <app-header></app-header>
-  <app-add-todo></app-add-todo>
+  <app-add-todo
+    (addTodo)="addTodo($event)"
+  >
+  </app-add-todo>
   <app-todo-item 
     *ngFor="let todo of todos"
     [todo]="todo"
