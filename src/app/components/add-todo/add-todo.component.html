@@ -1,5 +1,5 @@
 <form class="todos__form" (ngSubmit)="onSubmit()" >
-  <input type="text" name="title" [(ngModel)]="title" placeholder="Add todo..." />
+  <input type="text" autocomplete="off" name="title" [(ngModel)]="title" placeholder="Add todo..." />
   <input type="submit" value="Submit" class="todos__form-btn"/>
   <!-- {{ title }} -->
 </form>

@@ -3,3 +3,26 @@
   padding: 10px 0;
   background-color: #e2e2e2;
 }
+
+.nav {
+  .nav__link {
+    color: #333;
+    font-weight: 400;
+    margin-right: 5px;
+    &:after {
+      content: ' |';
+      color: #333;
+      font-weight: 400;
+      position: relative;
+    }
+    &:last-child {
+      margin-right: 0;
+      &:after {
+        display: none;
+      }
+    }
+  }
+  .nav__link--active {
+    font-weight: 600;
+  }
+}

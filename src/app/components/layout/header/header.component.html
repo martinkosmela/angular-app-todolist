@@ -1,3 +1,7 @@
 <header class="todos__header">
-  <h1>Todo List</h1>
+  <h1>Angular Crash Course</h1>
+  <nav class="nav">
+    <a class="nav__link" routerLink="/" routerLinkActive="nav__link--active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+    <a class="nav__link" routerLink="/about" routerLinkActive="nav__link--active" [routerLinkActiveOptions]="{ exact: true }">About</a>
+  </nav>
 </header>

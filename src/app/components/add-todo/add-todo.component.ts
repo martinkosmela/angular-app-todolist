@@ -22,7 +22,14 @@ export class AddTodoComponent implements OnInit {
       completed: false
     }
 
-    this.addTodo.emit(todo);
+    if (todo.title != null) {
+      this.addTodo.emit(todo);
+      this.title = null;
+    } else {
+      console.log('Operation couldn\'t be completed')
+    }
+
+    
   }
 
 }
